@@ -9,12 +9,13 @@ export const SidebarContainer = styled.aside`
   width: 100%;
   height: 100%;
   background: ${(props) => props.theme.sidebar.bgPrimary};
-  display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
+  display: flex;
   align-items: center;
   top: 0;
-  left: ${({ isOpen }) => (isOpen ? "0" : "0")};
+  left: ${({ isSidebarOpen }) => (isSidebarOpen ? "0" : "100%")};
+  opacity: ${({ isSidebarOpen }) => (isSidebarOpen ? "100%" : "0")};
   justify-content: center;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease;
 `;
 
 export const CloseIconContainer = styled.div`

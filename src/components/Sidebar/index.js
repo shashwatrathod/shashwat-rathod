@@ -5,24 +5,23 @@ import {
   CloseIcon,
   SidebarWrapper,
   SidebarLink,
-  SidebarMenu,
-  SidebarItem,
+  SidebarMenu
 } from "./SidebarElements";
 import { NavMenuItems } from "../../data/NavMenuItems";
 import DownloadCVButton from "../DownloadCVButton";
 
-const Sidebar = () => {
+const Sidebar = ({isSidebarOpen, toggleIsSidebarOpen}) => {
   return (
     <>
-      <SidebarContainer isOpen="true">
+      <SidebarContainer isSidebarOpen={isSidebarOpen} onClick={toggleIsSidebarOpen}>
         <CloseIconContainer>
-          <CloseIcon />
+          <CloseIcon onClick={toggleIsSidebarOpen}/>
         </CloseIconContainer>
         <SidebarWrapper>
           <SidebarMenu>
             {NavMenuItems.map((val, key) => {
               return (
-                <SidebarLink key={key} to={val.to}>
+                <SidebarLink key={key} to={val.to} onClick={toggleIsSidebarOpen}>
                   {val.title}
                 </SidebarLink>
               );

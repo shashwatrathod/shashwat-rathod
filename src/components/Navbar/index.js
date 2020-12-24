@@ -14,13 +14,13 @@ import { IoMenu } from "react-icons/io5";
 import { NavMenuItems } from "../../data/NavMenuItems";
 import DownloadCVButton from "../DownloadCVButton"
 
-const Navbar = () => {
+const Navbar = ({toggleIsSidebarOpen}) => {
   return (
     <>
       <Nav>
         <NavbarNav>
           <NavbarLogo to="/">ShashwatRathod</NavbarLogo>
-          <Bars>
+          <Bars onClick={toggleIsSidebarOpen}>
             <IoMenu />
           </Bars>
           <NavMenu>
