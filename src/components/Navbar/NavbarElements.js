@@ -91,6 +91,12 @@ export const NavLink = styled(Link)`
   &.active {
       border-bottom: 3px solid ${props => props.theme.nav.textPrimary ? props.theme.nav.textPrimary : "white"};
   }
+
+  &:hover {
+    color: ${(props) =>
+    props.theme.nav.textSecondary ? props.theme.nav.textSecondary : "white"};
+    transition: 0.2s ease-in-out;
+  }
 `;
 
 export const NavDownloadButtonContainer = styled.div `
