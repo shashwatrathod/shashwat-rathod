@@ -9,7 +9,7 @@ export const HomeContainer = styled.div`
   align-self: center;
   justify-content: center;
   flex-direction: row;
-  height: 750px;
+  height: 755px;
   width: 100%;
   max-width: 1300px;
   position: relative;
@@ -51,7 +51,7 @@ export const MobileImageContainer = styled.div`
     width: 180px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    box-shadow: -0.2rem 0 1rem rgba(0,0,0,0.6);
+    box-shadow: -0.2rem 0 1rem rgba(0, 0, 0, 0.6);
   }
 `;
 
@@ -61,7 +61,7 @@ export const MobileProfilePic = styled.img`
   object-fit: cover;
   object-position: left;
   border-radius: 50%;
-`
+`;
 
 export const ImageContainer = styled.div`
   display: flex;
@@ -71,8 +71,8 @@ export const ImageContainer = styled.div`
   height: 100%;
   right: 0;
   object-fit: cover;
-  object-position: center;
-  box-shadow: -0.2rem 0 1rem #000;
+  object-position: top right;
+  box-shadow: -0.1rem 0 0.5rem #000;
   border-radius: 30px;
 
   @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {
@@ -177,7 +177,7 @@ export const MobileOtherInfoContainer = styled.div`
 
 export const OtherInfo = styled.div`
   display: flex;
-  color: ${props => props.theme.root.purple};
+  color: ${(props) => props.theme.root.purple};
   font-size: 1rem;
   font-weight: lighter;
   justify-content: center;

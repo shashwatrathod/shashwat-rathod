@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Sidebar from "./components/Sidebar";
 import Home from "./components/Home";
 import { Container } from "./AppElements";
+import Projects from "./components/Projects";
 
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
@@ -27,6 +28,7 @@ function App() {
         />
         <Container>
           <Home />
+          <Projects />
         </Container>
       </div>
     </ThemeProvider>
