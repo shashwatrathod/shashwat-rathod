@@ -21,5 +21,8 @@ export const theme = {
   },
   home: {
     triggerWidth: "1150px",
+  },
+  projects: {
+    triggerWidth: "1100px",
   }
 };
