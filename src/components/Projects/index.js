@@ -3,14 +3,12 @@ import {
   ProjectContainer,
   ProjectHeaderContainer,
   H1,
-  H3
+  H3,
 } from "./ProjectElements";
-import {ProjectData} from "../../data/ProjectData"
-
-import Carousel from "./Carousel" 
+import { ProjectData } from "../../data/ProjectData";
+import Carousel from "./Carousel";
 
 const Projects = () => {
-
   return (
     <>
       <ProjectContainer>
@@ -21,7 +19,7 @@ const Projects = () => {
             pariatur elit ea.
           </H3>
         </ProjectHeaderContainer>
-        <Carousel ProjectData={ProjectData}/>
+        <Carousel ProjectData={ProjectData} />
       </ProjectContainer>
     </>
   );

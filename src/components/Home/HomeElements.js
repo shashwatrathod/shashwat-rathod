@@ -5,22 +5,24 @@ import { FaBaby, FaPhone, FaEnvelope } from "react-icons/fa";
 
 export const HomeContainer = styled.div`
   display: flex;
-  margin-top: 0rem;
+  margin-top: -2.2rem;
   align-self: center;
   justify-content: center;
   flex-direction: row;
-  height: 755px;
+  height: 100vh;
   width: 100%;
   max-width: 1300px;
   position: relative;
   box-shadow: 2px;
   color: white;
+  
 
   @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {
     height: auto;
     width: auto;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: 0rem;
   }
 `;
 
@@ -34,6 +36,7 @@ export const InfoContainer = styled.div`
   border-radius: 50px;
   padding: 1rem;
   box-shadow: -0.2rem 0 2rem #000;
+  align-self: center;
 
   @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {
     margin-top: 2rem;
@@ -67,8 +70,9 @@ export const ImageContainer = styled.div`
   display: flex;
   position: absolute;
   margin-right: 3rem;
+  align-self: center;
   width: 450px;
-  height: 100%;
+  height: 90%;
   right: 0;
   object-fit: cover;
   object-position: top right;

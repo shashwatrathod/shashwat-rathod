@@ -24,5 +24,9 @@ export const theme = {
   },
   projects: {
     triggerWidth: "1100px",
+  },
+  work: {
+    triggerWidth: "900px",
+    yellow: "#f0e130"
   }
 };

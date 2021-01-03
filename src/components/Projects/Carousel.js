@@ -25,7 +25,7 @@ const Carousel = ({ ProjectData }) => {
     const c = current;
     setPrevious(c);
     setRight(true);
-    setLeft(false)
+    setLeft(false);
     setCurrent(current === length - 1 ? 0 : current + 1);
   };
 
@@ -38,46 +38,53 @@ const Carousel = ({ ProjectData }) => {
   };
 
   return (
-    <SliderContainer>
-      <LeftArrowContainer onClick={prevSlide}>
-        <IoMdArrowDropleft />
-      </LeftArrowContainer>
-      <RightArrowContainer onClick={nextSlide}>
-        <IoMdArrowDropright />
-      </RightArrowContainer>
-
-      {ProjectData.map((val, key) => {
-        var dis = false;
-        var cur = false;
-        var prev = false;
-        if (key === current) {
-          dis = true;
-          cur = true;
-        }
-        if (key === previous) {
-          prev = true;
-          dis = true;
-        }
-        return (
-          <>
-            <Slide display={dis} prev={prev} cur={cur} left={left} right={right}>
-              <ProjectTitle>
-                <TitleText>{val.title}</TitleText>
-              </ProjectTitle>
-              <ProjectInfoContainer>
-                <ProjectDate>{val.date}</ProjectDate>
-                <ProjectInfo>{val.info}</ProjectInfo>
-                <TechContainer>
-                  {val.tech.map((t, k) => {
-                    return <Tech key={k}>{t}</Tech>;
-                  })}
-                </TechContainer>
-              </ProjectInfoContainer>
-            </Slide>
-          </>
-        );
-      })}
-    </SliderContainer>
+    <>
+      <SliderContainer>
+        <LeftArrowContainer onClick={prevSlide}>
+          <IoMdArrowDropleft />
+        </LeftArrowContainer>
+        <RightArrowContainer onClick={nextSlide}>
+          <IoMdArrowDropright />
+        </RightArrowContainer>
+        {ProjectData.map((val, key) => {
+          var dis = false;
+          var cur = false;
+          var prev = false;
+          if (key === current) {
+            dis = true;
+            cur = true;
+          }
+          if (key === previous) {
+            prev = true;
+            dis = true;
+          }
+          return (
+            <>
+              <Slide
+                display={dis}
+                prev={prev}
+                cur={cur}
+                left={left}
+                right={right}
+              >
+                <ProjectTitle>
+                  <TitleText>{val.title}</TitleText>
+                </ProjectTitle>
+                <ProjectInfoContainer>
+                  <ProjectDate>{val.date}</ProjectDate>
+                  <ProjectInfo>{val.info}</ProjectInfo>
+                  <TechContainer>
+                    {val.tech.map((t, k) => {
+                      return <Tech key={k}>{t}</Tech>;
+                    })}
+                  </TechContainer>
+                </ProjectInfoContainer>
+              </Slide>
+            </>
+          );
+        })}
+      </SliderContainer>
+    </>
   );
 };
 

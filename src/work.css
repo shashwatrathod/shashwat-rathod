@@ -1,0 +1,15 @@
+.vertical-timeline::before {
+  background: #424242;
+  height: 100%;
+}
+
+.vertical-timeline {
+  margin-left: -19px;
+}
+
+@media only screen and (max-width: 900px) {
+  .vertical-timeline {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

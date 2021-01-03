@@ -5,6 +5,7 @@ import { FaLinkedin, FaPhone } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 import { theme } from "./theme";
+import Pro from "../images/pro.jpg"
 
 export const ProfileData = {
   firstName: "Shashwat",
@@ -13,7 +14,7 @@ export const ProfileData = {
   email: "shashwatrathod22@gmail.com",
   location: "Ahmedabad, India",
   birthDate: "22nd June, 2000",
-  profilePicSrc: "../public/images/pro.jpg",
+  profilePicSrc: Pro,
   about:
     "I consider myself as a problem solver who has a genuine desire to learn more and create an impact in the world we live in by shaping the tech around it. I diligently indulge in learning new skills and honing the ones I already have. I am interested in ML and Web Development and have had the opportunity to work on various related projects in teams as well as independently. I am a focused indvidual who gives his best shot at the task at hand.",
   social: [

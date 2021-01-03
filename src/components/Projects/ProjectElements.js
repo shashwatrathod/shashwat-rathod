@@ -4,11 +4,12 @@ import { keyframes } from "styled-components";
 export const ProjectContainer = styled.div`
   background-color: white;
   width: 100%;
-  height: 750px;
+  height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   flex-direction: column;
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     height: auto;
     width: auto;
   }
@@ -25,7 +26,8 @@ export const ProjectHeaderContainer = styled.div`
   justify-content: center;
   text-align: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     margin-top: 2rem;
   }
 `;
@@ -37,7 +39,8 @@ export const H1 = styled.div`
   flex-direction: column;
   color: #212121;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 2.1rem;
   }
 `;
@@ -48,7 +51,8 @@ export const H3 = styled.div`
   flex-direction: column;
   color: #212121;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 1rem;
   }
 `;
@@ -113,7 +117,7 @@ const slideLeftRev = keyframes`
   to{
     transform: translateX(105%)
   }
-`
+`;
 
 const slideRightRev = keyframes`
   from {
@@ -131,15 +135,15 @@ export const Slide = styled.div`
   display: ${(props) => (props.display ? "flex" : "none")};
   animation: ${(props) => {
       if (props.cur) {
-        if(props.right){
+        if (props.right) {
           return slideLeft;
-        }else if(props.left){
+        } else if (props.left) {
           return slideRightRev;
         }
       } else if (props.prev) {
-        if(props.right){
+        if (props.right) {
           return slideRight;
-        }else if(props.left){
+        } else if (props.left) {
           return slideLeftRev;
         }
       } else {
@@ -153,7 +157,8 @@ export const Slide = styled.div`
   z-index: 1;
   position: absolute;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     display: ${(props) => (props.display ? "flex" : "none")};
     flex-direction: column;
     width: 100%;
@@ -172,9 +177,11 @@ export const SliderContainer = styled.div`
   position: relative;
   display: flex;
   border-radius: 10px;
+  justify-content: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
-    width:90%;
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
+    width: 90%;
     height: 100%;
     min-height: 650px;
     margin-left: 1rem;
@@ -194,11 +201,12 @@ export const ProjectTitle = styled.div`
   width: 30%;
   background: linear-gradient(0deg, #00c9ff, #92fe9d);
   background-size: 200% 200%;
-  animation: ${gradientAnimation} 6s ease infinite;
+  animation: ${gradientAnimation} 4s ease infinite;
   display: flex;
   justify-content: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     width: 100%;
     height: auto;
   }
@@ -215,7 +223,8 @@ export const TitleText = styled.div`
   overflow: wrap;
   text-align: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 2rem;
   }
 `;
@@ -228,7 +237,8 @@ export const ProjectInfoContainer = styled.div`
   justify-content: space-around;
   align-self: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     justify-content: space-around;
   }
 `;
@@ -240,7 +250,8 @@ export const ProjectDate = styled.div`
   font-style: italic;
   font-size: 1rem;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 0.8rem;
     margin-bottom: 1.2rem;
   }
@@ -252,7 +263,8 @@ export const ProjectInfo = styled.div`
   font-size: 1.5rem;
   text-align: center;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 1.2rem;
     margin-bottom: 1.2rem;
   }
@@ -267,7 +279,8 @@ export const TechContainer = styled.div`
   justify-content: center;
   overflow: wrap;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     margin: 0.7rem 0.7rem 1.2rem 0.7rem;
   }
 `;
@@ -281,7 +294,8 @@ export const Tech = styled.div`
   justify-content: center;
   padding: 1rem;
 
-  @media screen and (max-width: ${(props) => props.theme.projects.triggerWidth}) {
+  @media screen and (max-width: ${(props) =>
+      props.theme.projects.triggerWidth}) {
     font-size: 0.9rem;
   }
 `;
