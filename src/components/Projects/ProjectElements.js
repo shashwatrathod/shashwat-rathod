@@ -41,7 +41,7 @@ export const H1 = styled.div`
 
   @media screen and (max-width: ${(props) =>
       props.theme.projects.triggerWidth}) {
-    font-size: 2.1rem;
+    font-size: 3rem;
   }
 `;
 
@@ -53,7 +53,7 @@ export const H3 = styled.div`
 
   @media screen and (max-width: ${(props) =>
       props.theme.projects.triggerWidth}) {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 

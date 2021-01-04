@@ -4,8 +4,10 @@ export const WorkContainer = styled.div`
   display: flex;
   background-color: white;
   width: 100%;
-  height: 100vh;
+  height: auto;
   flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.05);
+    
 
   @media screen and (max-width: ${(props) => props.theme.work.triggerWidth}) {
     height: auto;
@@ -16,10 +18,9 @@ export const WorkContainer = styled.div`
 export const WorkHeaderContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-self: flex-start;
+  align-self: center;
   place-items: center;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.05);
   width: 30%;
   height: 100%;
 
@@ -31,7 +32,7 @@ export const WorkHeaderContainer = styled.div`
 
 export const WorkTitleText = styled.div`
   display: flex;
-  margin: 25%;
+  margin: 0rem 25%;
   flex-wrap: wrap;
   text-align: center;
   font-size: 5rem;

@@ -1,4 +1,3 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
@@ -87,10 +86,6 @@ export const NavLink = styled(Link)`
   height: 100%;
   padding: 0 1rem;
   cursor: pointer;
-
-  &.active {
-      border-bottom: 3px solid ${props => props.theme.nav.textPrimary ? props.theme.nav.textPrimary : "white"};
-  }
 
   &:hover {
     color: ${(props) =>

@@ -1,4 +1,5 @@
-import {SiProbot} from "react-icons/si"
+import { IoLogoAndroid } from "react-icons/io5"
+import {GiBrain} from "react-icons/gi"
 
 export const WorkData = [
     {
@@ -6,7 +7,7 @@ export const WorkData = [
         companyName: "Nirmitee.io",
         date: "08/2020 - 11/2020",
         description: "Developed and deployed a CRUD API for managing the training data. FastApi (Python) and Ajax were used for the development, MongoDB was used for data storage, and the API was deployed to an AWS EC2 instance using Docker. Also developed a smart chatbot using RASA that understands the user's intent and replies accordingly.",
-        icon: <SiProbot />,
+        icon: <GiBrain />,
         iconStyle : {
             color: "white",
             background: "#f44336"
@@ -14,15 +15,15 @@ export const WorkData = [
         tech: ["Python","FastApi","RASA","MongoDB"]
     },
     {
-        jobTitle: "AI/ML Analyst Intern",
-        companyName: "Nirmitee.io",
-        date: "08/2020 - 11/2020",
-        description: "Developed and deployed a CRUD API for managing the training data. FastApi (Python) and Ajax were used for the development, MongoDB was used for data storage, and the API was deployed to an AWS EC2 instance using Docker. Also developed a smart chatbot using RASA that understands the user's intent and replies accordingly.",
-        icon: <SiProbot />,
+        jobTitle: "Android Developer Intern",
+        companyName: "Eople Internet Pvt Ltd",
+        date: "07/2019 - 08/2019",
+        description: "Worked on integrating Android's Location API with the application. Also added a Google Maps intent and implemented custom long press and touch actions on it. Implemented the UI/UX for several other intents. Worked with Firebase's real-time database and firestore.",
+        icon: <IoLogoAndroid />,
         iconStyle : {
             color: "white",
-            background: "#f44336"
+            background: "#3DDC84"
         },
-        tech: ["Python","FastApi","RASA","MongoDB"]
-    }
+        tech: ["Android","Java","Firebase"]
+    },
 ]

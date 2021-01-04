@@ -7,33 +7,48 @@ import {
   NavMenu,
   NavItem,
   NavLink,
-  NavDownloadButtonContainer
+  NavDownloadButtonContainer,
 } from "./NavbarElements";
 import { Link } from "react-scroll";
 import { IoMenu } from "react-icons/io5";
 import { NavMenuItems } from "../../data/NavMenuItems";
-import DownloadCVButton from "../DownloadCVButton"
+import DownloadCVButton from "../DownloadCVButton";
 
-const Navbar = ({toggleIsSidebarOpen}) => {
+const Navbar = ({ toggleIsSidebarOpen }) => {
   return (
     <>
       <Nav>
         <NavbarNav>
-          <NavbarLogo to="/">ShashwatRathod</NavbarLogo>
+          <NavbarLogo
+            to="home"
+            smooth={true}
+            activeClass="active"
+            offset={-80}
+          >
+            ShashwatRathod
+          </NavbarLogo>
           <Bars onClick={toggleIsSidebarOpen}>
             <IoMenu />
           </Bars>
           <NavMenu>
             {NavMenuItems.map((value, key) => {
               return (
-                <NavItem key={key}>
-                  <NavLink to={value.to}>{value.title}</NavLink>
+                <NavItem key={key} aria-role="navigation">
+                  <NavLink
+                    to={value.to}
+                    smooth={true}
+                    exact={true}
+                    offset={-83}
+                    spy={true}
+                  >
+                    {value.title}
+                  </NavLink>
                 </NavItem>
               );
             })}
           </NavMenu>
           <NavDownloadButtonContainer>
-            <DownloadCVButton />            
+            <DownloadCVButton />
           </NavDownloadButtonContainer>
         </NavbarNav>
       </Nav>

@@ -7,9 +7,8 @@
   margin-left: -19px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 950px) {
   .vertical-timeline {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: -19px;
   }
 }

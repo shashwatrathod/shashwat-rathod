@@ -3,9 +3,22 @@ import styled from "styled-components";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaBaby, FaPhone, FaEnvelope } from "react-icons/fa";
 
+export const HomeBase = styled.div`
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  margin-top: -2.2rem;
+  background-color: ${(props) => props.theme.nav.bgPrimary};
+
+  @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {
+    height: auto;
+    width: 100%;
+  }
+`;
+
 export const HomeContainer = styled.div`
   display: flex;
-  margin-top: -2.2rem;
   align-self: center;
   justify-content: center;
   flex-direction: row;
@@ -15,14 +28,13 @@ export const HomeContainer = styled.div`
   position: relative;
   box-shadow: 2px;
   color: white;
-  
 
   @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {
     height: auto;
     width: auto;
     margin-left: 1rem;
     margin-right: 1rem;
-    margin-top: 0rem;
+    margin-top: 0.8rem;
   }
 `;
 
@@ -35,7 +47,7 @@ export const InfoContainer = styled.div`
   background-color: ${(props) => props.theme.root.elevationLevelOne};
   border-radius: 50px;
   padding: 1rem;
-  box-shadow: -0.2rem 0 2rem #000;
+  box-shadow: -0.1rem 0 0.9rem #000;
   align-self: center;
 
   @media screen and (max-width: ${(props) => props.theme.home.triggerWidth}) {

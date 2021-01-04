@@ -26,7 +26,7 @@ export const theme = {
     triggerWidth: "1100px",
   },
   work: {
-    triggerWidth: "900px",
+    triggerWidth: "950px",
     yellow: "#f0e130"
   }
 };

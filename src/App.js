@@ -8,6 +8,8 @@ import Home from "./components/Home";
 import { Container } from "./AppElements";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
+import Skills from "./components/Skills";
+import Footer from "./components/Footer";
 
 function App() {
   const [isSidebarOpen, setisSidebarOpen] = useState(false);
@@ -29,8 +31,10 @@ function App() {
         />
         <Container>
           <Home />
-          <Projects />
+          <Skills />
           <Work />
+          <Projects />
+          <Footer />
         </Container>
       </div>
     </ThemeProvider>

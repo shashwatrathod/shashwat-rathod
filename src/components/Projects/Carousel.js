@@ -40,10 +40,10 @@ const Carousel = ({ ProjectData }) => {
   return (
     <>
       <SliderContainer>
-        <LeftArrowContainer onClick={prevSlide}>
+        <LeftArrowContainer onClick={prevSlide} role="button" aria-label="Previous Project">
           <IoMdArrowDropleft />
         </LeftArrowContainer>
-        <RightArrowContainer onClick={nextSlide}>
+        <RightArrowContainer onClick={nextSlide} role="button" aria-label="Next Project">
           <IoMdArrowDropright />
         </RightArrowContainer>
         {ProjectData.map((val, key) => {
@@ -66,16 +66,17 @@ const Carousel = ({ ProjectData }) => {
                 cur={cur}
                 left={left}
                 right={right}
+                key={key}
               >
                 <ProjectTitle>
-                  <TitleText>{val.title}</TitleText>
+                  <TitleText aria-label="Project Title">{val.title}</TitleText>
                 </ProjectTitle>
                 <ProjectInfoContainer>
-                  <ProjectDate>{val.date}</ProjectDate>
-                  <ProjectInfo>{val.info}</ProjectInfo>
+                  <ProjectDate aria-label="Project Dates">{val.date}</ProjectDate>
+                  <ProjectInfo aria-label="Project Description">{val.info}</ProjectInfo>
                   <TechContainer>
                     {val.tech.map((t, k) => {
-                      return <Tech key={k}>{t}</Tech>;
+                      return <Tech key={k} aria-label="Technology Used">{t}</Tech>;
                     })}
                   </TechContainer>
                 </ProjectInfoContainer>
