@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/shashwat-rathod/static/css/main.96edfca7.chunk.css",
+    "main.js": "/shashwat-rathod/static/js/main.d604f693.chunk.js",
+    "main.js.map": "/shashwat-rathod/static/js/main.d604f693.chunk.js.map",
+    "runtime-main.js": "/shashwat-rathod/static/js/runtime-main.d060a44f.js",
+    "runtime-main.js.map": "/shashwat-rathod/static/js/runtime-main.d060a44f.js.map",
+    "static/css/2.2aa38b9c.chunk.css": "/shashwat-rathod/static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.cc97d3a7.chunk.js": "/shashwat-rathod/static/js/2.cc97d3a7.chunk.js",
+    "static/js/2.cc97d3a7.chunk.js.map": "/shashwat-rathod/static/js/2.cc97d3a7.chunk.js.map",
+    "index.html": "/shashwat-rathod/index.html",
+    "static/css/2.2aa38b9c.chunk.css.map": "/shashwat-rathod/static/css/2.2aa38b9c.chunk.css.map",
+    "static/css/main.96edfca7.chunk.css.map": "/shashwat-rathod/static/css/main.96edfca7.chunk.css.map",
+    "static/js/2.cc97d3a7.chunk.js.LICENSE.txt": "/shashwat-rathod/static/js/2.cc97d3a7.chunk.js.LICENSE.txt",
+    "static/media/pro.cf9220b1.jpg": "/shashwat-rathod/static/media/pro.cf9220b1.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d060a44f.js",
+    "static/css/2.2aa38b9c.chunk.css",
+    "static/js/2.cc97d3a7.chunk.js",
+    "static/css/main.96edfca7.chunk.css",
+    "static/js/main.d604f693.chunk.js"
+  ]
+}
