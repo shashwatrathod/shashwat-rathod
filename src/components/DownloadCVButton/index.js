@@ -6,11 +6,8 @@ const DownloadCVButton = () => {
   return (
     <>
       <Container>
-        <DownloadButtonLink to="/">
+        <DownloadButtonLink href="./ShashwatResume.pdf" download>
           Download CV
-          {/* <IconContainer>
-            <RiDownload2Line />
-          </IconContainer> */}
         </DownloadButtonLink>
       </Container>
     </>

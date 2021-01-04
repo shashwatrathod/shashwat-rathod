@@ -37,6 +37,7 @@ const Skills = () => {
                   role="Skill"
                   loading="lazy"
                   alt={val.title}
+                  title={val.title}
                 />
               </Icon>
             );

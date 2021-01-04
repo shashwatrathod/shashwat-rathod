@@ -72,3 +72,22 @@ export const SidebarLink = styled(Link)`
         : "#01bf71"};
   }
 `;
+
+export const SidebarDiv = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  height: 80px;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    color: ${(props) =>
+      props.theme.sidebar.textSecondary
+        ? props.theme.sidebar.textSecondary
+        : "#01bf71"};
+  }
+`;

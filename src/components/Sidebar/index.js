@@ -6,6 +6,7 @@ import {
   SidebarWrapper,
   SidebarLink,
   SidebarMenu,
+  SidebarDiv
 } from "./SidebarElements";
 import { NavMenuItems } from "../../data/NavMenuItems";
 import DownloadCVButton from "../DownloadCVButton";
@@ -38,9 +39,9 @@ const Sidebar = ({ isSidebarOpen, toggleIsSidebarOpen }) => {
                 </SidebarLink>
               );
             })}
-            <SidebarLink to="/">
+            <SidebarDiv>
               <DownloadCVButton />
-            </SidebarLink>
+            </SidebarDiv>
           </SidebarMenu>
         </SidebarWrapper>
       </SidebarContainer>
